@@ -35,7 +35,7 @@ W5_W4 = 0.995   # landing
 W5_W0 = W5_W4 * W4_W3 * W3_W2 * W2_W1 * W1_W0
 print("Final Fuel Fraction (W5/W0): " + str(round(W5_W0, 3)))
 
-Wf_W0 = (1 - W5_W0) * 1.06    # compute fuel fraction
+Wf_W0 = (1 - W5_W0) * 1.06    # compute fuel fraction with "trapped/reserve" factor
 print("Total Fuel Fraction Wf/W0: {:.3f}".format(Wf_W0))
 
 W0 = 1000000      # kg, initial empty weight guess
